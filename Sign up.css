@@ -1,0 +1,235 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato",sans-serif;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+}
+.brand {
+  margin-left: 0;
+}
+
+.brand img {
+  width: 100px;
+  height: 100px;
+}
+
+.brand h1 {
+  font-size: 24px;
+  margin: 0;
+}
+.logo-text3 {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color:white ;
+}
+
+.logo-text3 h1 {
+  font-size: 24px;
+  margin-bottom: 0.5px;
+}
+
+.logo-text3 h1:first-child 
+{
+  margin-bottom: 5px; 
+}
+.container2 {
+  display: flex;
+  background: white;
+}
+
+.left-section, .right-section {
+  flex: 0.4;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  background: url(Images/bg2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  align-items: center;
+}
+
+.google-btn 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #876DF1;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 8px 30px;
+  margin-top: 2px ;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.google-btn i {
+  margin-right: 10px;
+}
+.or-divider {
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid #dbdada;
+  line-height: 0.01em;
+  margin-top: 20px;
+}
+
+.or-divider span 
+{
+  background: transparent;
+  padding: 100px;
+  color: #000000;
+  margin-top: 0.5px;
+  text-align: center;
+  margin-right: 10px;
+  align-self: center;
+}
+.separator 
+{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.separator span 
+{
+  margin: 0 10px;
+  color: #666;
+}
+
+.separator::before, .separator::after 
+{
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+.field-group2 {
+  width: 80%;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  margin-left: 5px; 
+  align-items: center;
+}
+.field-group2 label {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.field-group2 input[type="text"],
+.field-group2 input[type="email"],
+.field-group2 input[type="password"],
+.field-group2 input[type="password"] 
+{
+  width: 110%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 10.5px;
+}
+.boton-elegante {
+  padding: 9px 24px;
+  border: 2px solid #ac9af3;
+  background-color: #876DF1;
+  color: #ffffff;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(135, 109, 241, 0.25) 0%,
+    rgba(106, 69, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+.login-link {
+  color: #3b3636;
+}
+
+.login-link a 
+{
+  color: #162d53;
+  text-decoration: none;
+}
+.right-section
+{
+  background-image: url(Images/img2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Ensure the section takes full width */
+  height: 100vh; /* Ensure the section takes full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.right-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(192, 176, 255, 0.3); /* Add this */
+}
+p {
+  color: #f7f5f5;
+  font-size: 12px;
+  margin-left: 100px;
+  margin-top: 0.5px ;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="Services.css">
+    <title>Services</title>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">
+        <nav class="navbar">
+            
+            <div class="logo">
+                    <img src="./Images/v10_25.png" alt="Cancare Connect Logo">
+                <div class="logo-text">
+                    <span>CANCARE</span>
+                    <span>CONNECT</span>
+                </div>
+           
+            </div>
+        </a>
+            <ul class="nav-links">
+                <li><a id="login-link" href="login.html">LOGIN</a></li>
+                <li><a id="services-link" href="Services.html">SERVICES</a></li>
+                <li><a id="about-link" href="About.html">ABOUT</a></li>
+                <li><a id="profile-link" href="#">PROFILE</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="dashboard">
+        <header1>
+            <div class="profile-picture">
+                <img src="Images/user-profile-picture.jpg" alt="User Profile Picture">
+            </div>
+            <div class="greeting">
+                <h1>Good morning, User!</h1>
+                <p>Let's make this day productive.</p>
+            </div>
+            <button class="add-task">+ Add task</button>
+        </header1>
+        <main>
+            <div class="card chat">
+                <div class="Appointment Reminder">
+                    <h2>Upcoming Appointments <button class="edit-icon">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </h2>
+                    <p>XXX</p>
+                    <div class="timeline">
+                        <div class="event">August 8th, 2024 &nbsp; 10:00 AM &nbsp;<input type="checkbox" class="checkbox float-right"></div>
+                        <div class="event">August 20th, 2024 &nbsp; 10:00 AM&nbsp;<input type="checkbox" class="checkbox float-right"></div>
+                        <div class="event">September 1st, 2024 &nbsp; 10:00 AM&nbsp;<input type="checkbox" class="checkbox float-right"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card activity">
+                <h2>Medicine Reminder <button class="edit-icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    </button></h2>
+                <p>XXX</p>
+                <div class="timeline">
+                    <div class="event">Med 1 &nbsp;<input type="checkbox" class="checkbox float-right"></div>
+                    <div class="event">Med 2 &nbsp;<input type="checkbox" class="checkbox float-right"></div>
+                    <div class="event">Med 3 &nbsp;<input type="checkbox" class="checkbox float-right"></div>
+                </div>
+            </div>
+
+            <div class="card todo">
+                <h2>Dietary Advice <button class="edit-icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    </button></h2>
+                <p>XXX</p>
+                <ul>
+                    <li>Breakfast</li>
+                    <li>Lunch</li>
+                    <li>Dinner</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Highlight the active link in the navbar
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname.split("/").pop();
+            const navLinks = document.querySelectorAll(".nav-links a");
+
+            navLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
